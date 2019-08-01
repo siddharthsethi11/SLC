@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_kg7qcLSCEemOzLwusU5REw" targetNamespace="http://tns.tibco.com/bw/composite/Swagger.module" name="Swagger.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_cgcwYLSDEemOzLwusU5REw" name="addition" promote="ComponentProcess/addition">
+    <sca:interface.wsdl xmi:id="_cgcwZLSDEemOzLwusU5REw" interface="http://xmlns.example.com/20190801133410PLT#wsdl.interface(addition)" scaext:wsdlLocation="../Processes/swagger/module/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_cgdXcLSDEemOzLwusU5REw" name="RestService" path="/addition" docBasePath="http://localhost:7777/Swagger.module" docResourcePath="Addition" basePath="/" connector="swagger.module.Process" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/AdditionAPISpecs_1.0.0.json">
+      <operation xmi:id="_cgdXcrSDEemOzLwusU5REw" operationName="post" nickname="postAddition" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_cgzVsLSDEemOzLwusU5REw"/>
+      <advancedConfig xmi:id="_cgdXcbSDEemOzLwusU5REw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_cgdXc7SDEemOzLwusU5REw" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_kq9JILSCEemOzLwusU5REw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_krAzgLSCEemOzLwusU5REw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_krEd4LSCEemOzLwusU5REw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_krG6ILSCEemOzLwusU5REw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_krKkgLSCEemOzLwusU5REw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_krNn0LSCEemOzLwusU5REw" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_krQrILSCEemOzLwusU5REw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_XsgG8LSIEemXaYUM4NWMbw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Xs1eILSIEemXaYUM4NWMbw" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Xs5IgLSIEemXaYUM4NWMbw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_kk-c8LSCEemOzLwusU5REw" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_kk-c8bSCEemOzLwusU5REw" processName="swagger.module.Process"/>
+    <sca:service xmi:id="_cgcJULSDEemOzLwusU5REw" name="addition">
+      <sca:interface.wsdl xmi:id="_cgcJUbSDEemOzLwusU5REw" interface="http://xmlns.example.com/20190801133410PLT#wsdl.interface(addition)" scaext:wsdlLocation="../Processes/swagger/module/Process.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

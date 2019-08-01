@@ -1,0 +1,68 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "AdditionAPISpecs",
+    "x-lastModified": "Jul 31, 2019 08:06AM PST"
+  },
+  "paths": {
+    "/addition": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/GiveNewSchemaNameHere"
+            },
+            "examples": {
+              "application/json": {
+                "result": 23
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/request"
+            }
+          }
+        ],
+        "operationId": "postAddition",
+        "consumes": [
+          "application/json"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "GiveNewSchemaNameHere": {
+      "type": "object",
+      "properties": {
+        "result": {
+          "type": "integer",
+          "default": 23
+        }
+      }
+    },
+    "request": {
+      "type": "object",
+      "properties": {
+        "a": {
+          "type": "integer",
+          "default": 3
+        },
+        "b": {
+          "type": "integer",
+          "default": 2
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [{
+            "localTimestamp": 1564681225000,
+            "localURI": "/Swagger.module/Service Descriptors/AdditionAPISpecs_1.0.0.json",
+            "disabled": false,
+            "remoteTimestamp": 1564599980000,
+            "localHash": "6bc5c6e9314b91613809a556a9ede32324158354",
+            "remoteId": "494",
+            "remoteHash": "6bc5c6e9314b91613809a556a9ede32324158354"
+        }],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": []
+}
